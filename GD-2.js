@@ -79,4 +79,13 @@ var jerryMass = 45;
 console.log("Is Tom's BMI higher then Jerry's BMI ?");
 console.log(tomBMI(tomHeight, tomMass) > jerryBMI(jerryHeight, jerryMass));
 
+//Bonus
+
+let num = Number(prompt('Choose a whole number 1 - 12')) - 1;
+let monthsJ = ['January','February','March','April','May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+if (num <= 0 || num > 12 || num % 1 != 0) {
+  console.log('Input Invalid: Please choose a whole number 1-12')
+} else {
+  console.log(monthsJ[num])
+};
 
