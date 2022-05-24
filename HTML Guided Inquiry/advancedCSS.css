@@ -1,0 +1,35 @@
+#board td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.black {
+    background-color: black;
+}
+
+#flag td {
+    padding: 10px 20px 10px;
+}
+
+
+.red {
+    background-color: red;
+}
+
+#stars {
+    position: absolute;
+    top:411px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}

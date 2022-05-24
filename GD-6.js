@@ -33,7 +33,7 @@ console.log(getTarget(numsM, 3));
 // Hard -- On Index.html
 
 //Very Hard
-
+/*
 function amountTocoins(amount, coins) 
 {
  if (amount === 0) 
@@ -56,7 +56,39 @@ function amountTocoins(amount, coins)
          
     }
 } 
-console.log(amountTocoins(11, [5, 2, 1]));
+
+*/
+
+
+function amountTocoins(amount, coins, count) 
+{
+  //console.log(count);
+ if (amount === 0) 
+  {
+     return count;
+   } 
+
+  else if (coins.length === 0) {
+    return -1;
+  }
+ else
+   {
+     if (amount >= coins[0]) 
+       {
+        left = (amount - coins[0]); // left = 6
+        count = count + 1;
+        return amountTocoins(left, coins, count++);
+        } 
+      else
+        {
+         coins.shift();
+         return amountTocoins(amount, coins, count);
+          
+         }
+         
+    }
+} 
+console.log(amountTocoins(22, [3,1], 0));
 
 
 
